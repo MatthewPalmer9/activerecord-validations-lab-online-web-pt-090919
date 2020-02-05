@@ -1,8 +1,5 @@
 class Post < ActiveRecord::Base
   validates :title, presence: true
-  validates :content, presence: true
-  validates :summary, presence: true
-  validates :category, presence: true
   validates :content, length: { minimum: 250 }
   validates :summary, length: { maximum: 250 }
 
