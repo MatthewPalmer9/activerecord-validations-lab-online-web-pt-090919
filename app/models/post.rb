@@ -9,7 +9,7 @@ class Post < ActiveRecord::Base
   validates :category, inclusion: { in: %w(Fiction Non-Fiction),
     message: "%{value} is not a valid category." }
 
-  validates :title, inclusion: { in: %w(Won't Believe Secret Top Guess),
-    message: "%{value} is not a valid title."}
+  validates :title, inclusion: { in: ["You Won't", "Believe", "Secret", "Top", "Guess"),
+    message: "That is not a clickbait-y title. Try again."}
 
 end
