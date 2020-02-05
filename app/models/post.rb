@@ -6,5 +6,5 @@ class Post < ActiveRecord::Base
   validates :category, inclusion: { in: %w(Fiction Non-Fiction),
     message: "%{value} is not a valid category." }
 
-  validates :title, inclusion: { in: %w(Won't Believe )} 
+  validates :title, inclusion: { in: %w(Won't Believe Secret)} 
 end
